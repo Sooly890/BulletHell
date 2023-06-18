@@ -264,6 +264,7 @@ MonoBehaviour:
   colliderr: {fileID: 4739335}
   damage: 0.1
   impact: {fileID: 5878954840711983993, guid: 08a800447d1143844884954b5e84c289, type: 3}
+  playerBullet: {fileID: 5493598784502561852, guid: af02ba6502fd19b498eac5910c67c523, type: 3}
 --- !u!61 &4739335
 BoxCollider2D:
   m_ObjectHideFlags: 0
