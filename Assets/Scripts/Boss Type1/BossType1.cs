@@ -52,6 +52,7 @@ public class BossType1 : MonoBehaviour
 
         if (homingTime > 10)
         {
+            homingTime = 0;
             Instantiate(yellowFollowingBullet, transform.position, Quaternion.Euler(transform.eulerAngles + new Vector3(0,0,0)));
         }
     }

@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public Collider2D colliderr;
     public float damage;
-    public GameObject impact;
     public GameObject playerBullet;
 
     // Start is called before the first frame update
@@ -20,8 +18,7 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(playerBullet, transform.position + transform.up, transform.rotation);
+            Instantiate(playerBullet, transform.position + transform.right, Quaternion.Euler(transform.eulerAngles + new Vector3(0,0,-90)));
         }
-        colliderr.enabled = true;
     }
 }
