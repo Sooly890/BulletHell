@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kill: {fileID: 0}
   damage: 5
+  killOnTouch: 1
 --- !u!114 &-283511061395449179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,3 +167,4 @@ MonoBehaviour:
   - 10
   speed: 7
   player: {fileID: 0}
+  timeOut: 5

@@ -12,6 +12,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2945255997187510184, guid: 984f19cfd4e2e2f4cb402e1562d0bfe2, type: 3}
+      propertyPath: killOnTouch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945255997187510184, guid: 984f19cfd4e2e2f4cb402e1562d0bfe2, type: 3}
       propertyPath: modValues.Array.size
       value: 1
       objectReference: {fileID: 0}

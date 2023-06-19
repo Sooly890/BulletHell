@@ -67,5 +67,6 @@ public class BossType1 : MonoBehaviour
 
         // set vector of transform directly
         transform.up = direction;
+        transform.eulerAngles += new Vector3(0,0,Mathf.Sin(Time.time * 1.3f) * 10f);
     }
 }

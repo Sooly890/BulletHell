@@ -14,11 +14,13 @@ public class Bullet : MonoBehaviour
     public float speed;
     public GameObject player;
 
+    public float timeOut = 10f;
+
     void Awake()
     {
         normalDir = transform.eulerAngles;
         rb = GetComponent<Rigidbody2D>();
-        Destroy(gameObject, 10f);
+        Destroy(gameObject, timeOut);
         player = GameObject.Find("Player");
     }
     
