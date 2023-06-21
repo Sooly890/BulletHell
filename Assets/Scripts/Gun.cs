@@ -18,7 +18,7 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(playerBullet, transform.position + transform.right, Quaternion.Euler(transform.eulerAngles + new Vector3(0,0,-90)));
+            Instantiate(playerBullet, transform.position + transform.right + transform.up*-0.25f, Quaternion.Euler(transform.eulerAngles + new Vector3(0,0,-90)));
         }
     }
 }

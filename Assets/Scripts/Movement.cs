@@ -11,14 +11,13 @@ public class Movement : MonoBehaviour
     private Vector3 normalScale;
     private Vector3 lastPos;
 
-    public Slider healthBar;
-    public float health;
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
+    public Sprite idleImg;
 
     void Start()
     {
         normalScale = transform.localScale;
-        healthBar.maxValue = health;
-        healthBar.value = health;
     }
 
     void Update()
@@ -39,11 +38,19 @@ public class Movement : MonoBehaviour
 
         Vector2 movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speed;
 
+        if (Mathf.Abs(movement.x) > Vector2.zero.x && Mathf.Abs(movement.y) > Vector2.zero.y)
+        {
+            animator.enabled = true;
+        }
+        else
+        {
+            spriteRenderer.sprite = idleImg;
+            animator.enabled = false;
+        }
+
         rb.velocity = movement;
 
         transform.eulerAngles = dir;
-
-        healthBar.value += (health - healthBar.value)/3;
     }
 
     void PointAtMouse()
