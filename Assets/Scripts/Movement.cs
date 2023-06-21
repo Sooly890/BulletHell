@@ -57,14 +57,4 @@ public class Movement : MonoBehaviour
         // set vector of transform directly
         transform.right = direction;
     }
-
-    public void Damage(float damage)
-    {
-        health -= damage;
-
-        if (health <= 0)
-        {
-            gameObject.SetActive(false);
-        }
-    }
 }

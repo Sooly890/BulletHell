@@ -17,7 +17,7 @@ public class KillOnTouch : MonoBehaviour
     {
         if (col.gameObject == kill)
         {
-            kill.GetComponent<Movement>().Damage(damage);
+            kill.GetComponent<PlayerHealth>().Damage(damage);
 
             if (killOnTouch)
             {

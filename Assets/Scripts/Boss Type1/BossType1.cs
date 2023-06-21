@@ -60,10 +60,10 @@ public class BossType1 : MonoBehaviour
             Instantiate(yellowFollowingBullet, transform.position, Quaternion.Euler(transform.eulerAngles + new Vector3(0,0,0)));
         }
 
-        dir = new Vector2(Mathf.Sin(Time.time), Mathf.Cos(Time.time));
+        /*dir = new Vector2(Mathf.Sin(Time.time), Mathf.Cos(Time.time));
         Vector2 wantedPos = dir * Vector2.Distance(transform.position, player.transform.position);
 
-        rb.velocity = (Vector2)transform.position - ((Vector2)player.transform.position + wantedPos/(safeDist*2));
+        rb.velocity = (Vector2)transform.position - ((Vector2)player.transform.position + wantedPos/(safeDist*2));*/
     }
 
     void PointAtPlayer()

@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kill: {fileID: 0}
-  damage: 5
+  damage: 1
   killOnTouch: 1
 --- !u!114 &-283511061395449179
 MonoBehaviour:
